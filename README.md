@@ -1,12 +1,13 @@
-# @yourusername/shuffle-array (Class 2 Example)
+# @kaltmax/string-toolkit (Class 2 Example)
 
-> A small library that takes an array as input and returns a new array that is shuffled.
+> A small JavaScript library for converting strings into different naming conventions like `snake_case` and `kebab-case`.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-   - [Examples](#examples)
+  - [toSnakeCase](#tosnakecase)
+  - [toKebabCase](#tokebabcase)
 - [Contribution](#contribution)
 - [Security](#security)
 - [License](#license)
@@ -16,52 +17,41 @@
 Install via npm:
 
 ```bash
-npm install @kaltmax/shuffle-array
+npm install @kaltmax/string-toolkit
 ```
+
 Install via yarn:
 
 ```bash
-yarn add @kaltmax/shuffle-array
+yarn add @kaltmax/string-toolkit
 ```
 
 ## Usage
 
-Basic Usage
-
-```js<>
-import shuffleArray from '@kaltmax/shuffle-array';
-or 
-import cryptoShuffleArray from '@kaltmax/shuffle-array';
-
-const startArray = [1, 2, 3, 4, 5];
-const newShuffledArray = shuffleArray(startArray);
-
-console.log(startArray);       // e.g., [1, 2, 3, 4, 5]
-console.log(newShuffledArray); // e.g., [3, 1, 5, 2, 4]
-```
-
-### Examples
-
-Shuffle a list of user IDs:
+Import the functions:
 
 ```js
-import shuffleArray from '@kaltmax/shuffle-array';
-
-const userIds = ['u1', 'u2', 'u3', 'u4'];
-const randomizedOrderOfUserIds = shuffleArray(userIds);
-
-console.log(randomizedOrderOfUserIds); // e.g., ['u1', 'u3', 'u4', 'u2']
+import { toSnakeCase, toKebabCase } from '@kaltmax/string-toolkit';
 ```
 
-Use in a game for randomizing cards:
+### toSnakeCase
+
+Convert a string to `snake_case`:
 
 ```js
-import shuffleArray from '@kaltmax/shuffle-array';
+const input = 'Hello World';
+const result = toSnakeCase(input);
+console.log(result); // "hello_world"
+```
 
-const deck = ['Ace of Spades', 'Two of Hearts']; // some card deck
-const shuffledDeck = shuffleArray(deck);
+### toKebabCase
 
-console.log(shuffledDeck); // e.g., ['Two of Hearts', 'Ace of Spades', ...]
+Convert a string to `kebab-case`:
+
+```js
+const input = 'Hello World';
+const result = toKebabCase(input);
+console.log(result); // "hello-world"
 ```
 
 ## Contribution
@@ -71,8 +61,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for m
 ## Security
 
 Please refer to our [SECURITY.md](./SECURITY.md) for information about our security policies, how to report vulnerabilities, and our approach to handling security concerns.
-
-**Important Note**: This library uses non-cryptographic randomness (`Math.random()`). Do not rely on it for security-critical functionality.
 
 ## License
 

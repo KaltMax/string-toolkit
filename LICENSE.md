@@ -1,4 +1,6 @@
-Copyright (c) 2025-current <YOUR-NAME>
+MIT License
+
+Copyright (c) 2025 Maximilian Kaltenreiner
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
