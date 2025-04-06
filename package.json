@@ -1,0 +1,21 @@
+{
+  "name": "@kaltmax/string-toolkit",
+  "version": "1.0.0",
+  "description": "Useful JavaScript library that provides string manipulation functions",
+  "keywords": [
+    "string",
+    "manipulation",
+    "functions"
+  ],
+  "license": "MIT",
+  "author": "Maximilian Kaltenreiner <koitnreina666@web.de>",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1"
+  }
+}
